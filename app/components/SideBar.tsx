@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import {links,socialLinks} from '../lib/navitems'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -7,11 +7,34 @@ import clsx from 'clsx';
 
 
 const SideBar = () => {
+  const [isMenuOpen,setIsMenuOpen]  = useState(false);
 const pathname = usePathname();
 console.log(`pathname ${usePathname()}`);
   return (
     <div className="relative ">
-       <ul className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center '>
+      {/* burger menu button for smaller screens */}
+      <div
+        className="md:hidden fixed top-5 left-4 cursor-pointer z-50"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+       <svg
+  xmlns="http://www.w3.org/2000/svg"
+  className="h-6 w-6 text-white transform -scale-x-1"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    d="M4 6h16M4 12h16m-7 6h7"
+  />
+</svg>
+
+      </div>
+    {/* Sidebar for larger screens */}
+       <ul className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center hidden md:block sm:block'>
       {links.map((link:any) => (
         <li key={link.name} onClick={()=>{
           console.log("clicked");
@@ -31,10 +54,33 @@ console.log(`pathname ${usePathname()}`);
         
         </ul> 
          
+        {isMenuOpen && (
+        <div className="md:hidden sm:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 flex items-center justify-center">
+          <ul className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center '>
+      {links.map((link:any) => (
+        <li key={link.name} onClick={()=>{
+          console.log("clicked");
+        }}>
+          <Link href={link.href} legacyBehavior> 
+           <a className={clsx(
+            'w-[2.8rem] h-[2.8rem] flex  justify-center items-center mt-[0.8rem]  hover:bg-white rounded-full hover:text-black transition-colors duration-300',
+            {
+              'text-black bg-white': pathname === link.href,
+              'text-white': pathname !== link.href,
+            },
+           )}
+           >{link.icon}</a>
+           </Link>
+           </li>
+      ))}
+        
+        </ul> 
+        </div>
+      )}
 
-        <ul className='bg-transparent w-[8.2rem] h-[3.8rem] border-[2px] text-white border-white-400/20 m-[1rem] absolute top-[2rem] right-[2rem] rounded-full flex-row justify-center items-center flex space-x-2'>
+        <ul className='bg-transparent h-[3.2rem] w-[6.5rem] right-4 md:w-[8.2rem] md:h-[3.8rem] border-[2px] text-white border-white-400/20 m-[1rem] absolute md:top-[2rem] d:mright-[2rem] rounded-full flex-row justify-center items-center flex space-x-2'>
       {socialLinks.map((item:any,index:number) => (
-        <li key={index} className='w-[2.8rem] h-[2.8rem] flex justify-center items-center   hover:bg-white rounded-full hover:text-black transition-colors duration-500'>{item.icon}</li>
+        <li key={index} className='w-[2.3rem] h-[2.3rem] flex justify-center items-center   hover:bg-white rounded-full hover:text-black transition-colors duration-500'>{item.icon}</li>
       ))}
         
         </ul> 

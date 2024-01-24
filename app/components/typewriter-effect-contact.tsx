@@ -55,7 +55,7 @@ export const TypewriterEffect = ({
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    `dark:text-white dark:text-4xl md:dark:text-7xl text-black opacity-0 hidden`,
+                    `dark:text-white dark:text-4xl md:dark:text-xl text-black opacity-0 hidden`,
                     word.className
                   )}
                 >
@@ -90,7 +90,7 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-[6rem] lg:h-[4rem] bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
+          "inline-block rounded-sm w-[4px] h-1 md:h-5 lg:h-5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
           cursorClassName
         )}
       ></motion.span>
@@ -178,7 +178,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
+          "block rounded-sm w-[4px]  h-2 md:h-2 sm:h-6 xl:h-12 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
           cursorClassName
         )}
       ></motion.span>
