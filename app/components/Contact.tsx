@@ -20,7 +20,7 @@ const Contact: FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className='mb-1 px-2'>
+      <div className='w-full mb-1 px-2 md:px-0'>
         <label
           htmlFor='name'
           className='mb-1 block text-base font-medium text-black'
@@ -29,6 +29,7 @@ const Contact: FC = () => {
         </label>
         <input
           type='text'
+          id='name'
           placeholder='Full Name'
           className='w-full rounded-md border border-zinc-50/30 bg-black py-2 px-4 text-base font-medium text-white outline-none focus:border-gray-300 focus:shadow-md'
           {...register('name', { required: true })}
@@ -43,6 +44,7 @@ const Contact: FC = () => {
         </label>
         <input
           type='email'
+          id='email'
           placeholder='Enter your email'
           className='w-full rounded-md border border-zinc-50/30 bg-black py-2 px-4 text-base font-medium text-white outline-none focus:border-gray-300 focus:shadow-md'
           {...register('email', { required: true })}
@@ -56,7 +58,8 @@ const Contact: FC = () => {
           Message
         </label>
         <textarea
-          rows={4}
+          rows={4} 
+          id='message'
           placeholder='Type your message'
           className='w-full resize-none rounded-md border border-zinc-50/30  bg-black py-2 px-4 text-base font-medium text-white outline-none focus:border-gray-300 focus:shadow-md'
           {...register('message', { required: true })}

@@ -15,40 +15,40 @@ const items: Items[] = [
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSSfor visually appealing and user-friendly task management.",
+    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
     image:"anydo.jpeg"
 },
 {
-    name:"AnyDo:>",
+    name:"hello",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS. A visually pleasing and user-friendly solution for effective task management.",
+    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
     image:"anydo.jpeg"
 },
 {
-    name:"AnyDo:>",
+    name:"heelo",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS. A visually pleasing and user-friendly solution for effective task management.",
+    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
     image:"anydo.jpeg"
 },
 {
-    name:"AnyDo:>",
+    name:"xyz",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS. A visually pleasing and user-friendly solution for effective task management.",
+    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
     image:"anydo.jpeg"
 }
 ]

@@ -78,7 +78,7 @@ console.log(`pathname ${usePathname()}`);
         </div>
       )}
 
-        <ul className='bg-transparent h-[3.2rem] w-[6.5rem] right-4 md:w-[8.2rem] md:h-[3.8rem] border-[2px] text-white border-white-400/20 m-[1rem] absolute md:top-[2rem] d:mright-[2rem] rounded-full flex-row justify-center items-center flex space-x-2'>
+        <ul className='fixed bg-transparent h-[3rem] top-[0.2rem] w-[6.2rem] right-1 md:w-[7.2rem] md:h-[3.2rem] border-[2px] text-white border-white-400/20 m-[1rem] md:top-[2rem] d:mright-[2rem] rounded-full flex-row justify-center z-50 items-center flex space-x-2'>
       {socialLinks.map((item:any,index:number) => (
         <li key={index} className='w-[2.3rem] h-[2.3rem] flex justify-center items-center   hover:bg-white rounded-full hover:text-black transition-colors duration-500'>{item.icon}</li>
       ))}
