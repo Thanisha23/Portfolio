@@ -20,13 +20,13 @@ const Contact: FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className='w-full mb-1 px-2 md:px-0'>
-        <label
+      <div className='w-full md:w-[100%] px-2 mb-7 mt-5'>
+        {/* <label
           htmlFor='name'
           className='mb-1 block text-base font-medium text-black'
         >
           Full Name
-        </label>
+        </label> */}
         <input
           type='text'
           id='name'
@@ -35,14 +35,14 @@ const Contact: FC = () => {
           {...register('name', { required: true })}
         />
       </div>
-      <div className='mb-2 px-2'>
-        <label
+      <div className='w-full md:w-[100%] px-2 mb-7'>
+        {/* <label
           htmlFor='email'
           className='mb-3 block text-base font-medium text-black'
         >
           Email Address
-        </label>
-        <input
+        </label> */}
+        <input 
           type='email'
           id='email'
           placeholder='Enter your email'
@@ -50,13 +50,13 @@ const Contact: FC = () => {
           {...register('email', { required: true })}
         />
       </div>
-      <div className='mb-2 px-2'>
-        <label
+      <div className='w-full md:w-[100%] px-2 mb-7'>
+        {/* <label
           htmlFor='message'
           className='mb-3 block text-base font-medium text-black'
         >
           Message
-        </label>
+        </label> */}
         <textarea
           rows={4} 
           id='message'
@@ -65,8 +65,8 @@ const Contact: FC = () => {
           {...register('message', { required: true })}
         ></textarea>
       </div>
-      <div className='ml-[2.5rem]'>
-      <button className="shadow-[inset_0_0_0_2px_#616467] px-9 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+      <div className='flex justify-center items-centre'>
+      <button className="shadow-[inset_0_0_0_2px_#616467] px-5 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
   Send Message
 </button>
       </div>

@@ -5,10 +5,10 @@
 import { TypewriterEffect } from "./components/typewriter-effect";
 import './styles/Home.module.css'; // Import your styles
 import { NextPage } from 'next';
-import {instrument_Serif} from "./fonts";
+import { satisfy } from "./fonts";
 import React from "react";
 import SparklesCore from "./components/SparklesCore";
-import { Instrument_Serif } from "next/font/google";
+
 const LandingPage: NextPage = () => {
   const words = [
     {
@@ -37,7 +37,7 @@ const LandingPage: NextPage = () => {
 
     <div className="flex flex-col h-[40rem] md:h-[45rem] bg-black items-center justify-between overflow-hidden rounded-md">
        <div className="flex-grow" />
-      <div className={`flex flex-col h-[1rem] md:h-[5rem] items-center justify-center z-20 tracking-wide md:tracking-[0.2rem] ${instrument_Serif.className}`}>
+      <div className={`flex flex-col h-[1rem] md:h-[5rem] items-center justify-center z-20 tracking-wide md:tracking-[0.2rem] ${satisfy.className}`}>
       <TypewriterEffect words={words} />
     </div>
 

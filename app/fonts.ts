@@ -1,4 +1,4 @@
-import { Merienda,Pacifico,Luckiest_Guy,Satisfy,Cinzel,Instrument_Serif,Josefin_Sans,DM_Serif_Display} from "next/font/google";
+import { Merienda,Pacifico,Luckiest_Guy,Satisfy,Cinzel,DM_Serif_Display} from "next/font/google";
 
 
 
@@ -7,7 +7,7 @@ export const merienda = Merienda({
     display:'swap',
 })
 
-export const instrument_Serif = Satisfy({
+export const satisfy= Satisfy({
     subsets: ['latin'],
     display:'swap',
     weight: "400"

@@ -4,7 +4,7 @@ import React from "react";
 import Spotlight from "../components/Spotlight";
 import Image from "next/image";
 
-import { instrument_Serif } from "../fonts";
+import { satisfy } from "../fonts";
 import Contact from "../components/Contact";
 const page = () => {
 
@@ -19,7 +19,7 @@ const page = () => {
       fill="white"
     />
 
-    <div className="md:mt-[6rem]  p-4 md:h-[40rem] md:max-w-full  mx-auto w-20rem pt-20 md:pt-0 md:grid md:grid-cols-2 md:gap-8">
+    <div className="md:mt-[6rem]  p-4 md:h-[40rem] md:max-w-full  mx-auto w-20rem pt-20 md:pt-0 md:grid md:grid-cols-2 md:gap-11">
         
 
               {/* for larger screens */}
@@ -32,7 +32,7 @@ const page = () => {
           alt="contact"
           />
 
-<div className={`h-[5rem] w-full mx-auto text-xl text-white text-center mb-14 ${instrument_Serif.className} tracking-wider`}>
+<div className={`h-[5rem] w-full mx-auto text-xl md:text-3xl text-white text-center md:mb-[8rem] ${satisfy.className} tracking-wider`}>
 {/* <TypewriterEffect words={words} /> */}
 
 <p>Drop me a line below and let's turn </p>
@@ -41,7 +41,7 @@ const page = () => {
         </div>
       
 
-      <div className="flex flex-col items-center justify-center rounded-[2rem] md:rounded-[4rem] bg-transparent border border-opacity-15 shadow-[0_25px_50px_-12px_rgba(255,255,255,0.5)] w-[20rem] md:w-[28rem] h-[27rem] md:h-[32rem] transition-shadow">
+      <div className="md:mt-[4rem] md:px-[1rem] px-[1rem] pt-7 rounded-[2rem] md:rounded-[1rem] bg-transparent border border-opacity-15 shadow-[0_25px_50px_-12px_rgba(255,255,255,0.5)] w-[20rem] md:w-[24rem] h-[27rem] md:h-[28rem] transition-shadow">
   <Contact />
 </div>
 
