@@ -1,4 +1,4 @@
-import { Merienda,Pacifico,Luckiest_Guy,Satisfy,Cinzel,DM_Serif_Display} from "next/font/google";
+import { Merienda,Poppins,Luckiest_Guy,Satisfy,Cinzel,DM_Serif_Display} from "next/font/google";
 
 
 
@@ -29,7 +29,7 @@ export const luckiest_Guy = Luckiest_Guy({
     weight: "400"
 })
 
-export const pacifico = Pacifico({
+export const poppins = Poppins({
     subsets: ['latin'],
     display: 'swap',
     weight: "400"
