@@ -4,7 +4,7 @@ import { LuPencilLine } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
 //social links
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 interface Link {
   name: string;
@@ -26,7 +26,7 @@ const links: Link[] = [
 
 const socialLinks: SocialLink[] = [
   { name: 'X', icon: <FaXTwitter size={18} /> },
-  { name: 'X', icon: <FaLinkedinIn size={18} /> },
+  { name: 'X', icon:  <FaGithub size={24}/> },
 ];
 
 export { links, socialLinks };
