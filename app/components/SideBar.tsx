@@ -19,7 +19,7 @@ const SideBar = () => {
     <div className="relative">
       {/* Burger menu button for smaller screens */}
       <div
-        className="md:hidden fixed top-5 left-4 cursor-pointer z-50"
+        className="md:hidden sm:hidden fixed top-5 left-4 cursor-pointer z-50"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <svg

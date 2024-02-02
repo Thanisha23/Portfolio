@@ -1,6 +1,6 @@
 import { CiGrid42 } from "react-icons/ci";
 import { GoProjectRoadmap } from "react-icons/go";
-import { LuPencilLine } from "react-icons/lu";
+import { FaUser } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 //social links
 import { FaXTwitter } from "react-icons/fa6";
@@ -20,13 +20,13 @@ interface SocialLink {
 const links: Link[] = [
   { name: 'Home', href: '/', icon: <CiGrid42 size={20} /> },
   { name: 'Projects', href: '/projects', icon: <GoProjectRoadmap size={20} /> },
-  { name: 'Blogs', href: '/blogs', icon: <LuPencilLine size={20} /> },
+  { name: 'About Me', href: '/aboutMe', icon: <FaUser size={19} />  },
   { name: 'Contact', href: '/contact', icon: <IoMailOutline size={20} /> },
 ];
 
 const socialLinks: SocialLink[] = [
   { name: 'X', icon: <FaXTwitter size={18} /> },
-  { name: 'X', icon:  <FaGithub size={24}/> },
+  { name: 'Github', icon:  <FaGithub size={24}/> },
 ];
 
 export { links, socialLinks };

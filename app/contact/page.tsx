@@ -27,12 +27,12 @@ const page = () => {
           <Image
           className="animate-bounce-slow mb-1 mx-auto"
           src="/contact-img-final.png"
-          width={150}
-          height={150}
+          width={160}
+          height={160}
           alt="contact"
           />
 
-<div className={`h-[5rem] w-full mx-auto text-xl md:text-3xl text-white text-center md:mb-[8rem] ${satisfy.className} tracking-wider`}>
+<div className={`h-[5rem] w-full mx-auto text-xl md:text-4xl text-white text-center md:mb-[8rem] ${satisfy.className} tracking-wider`}>
 {/* <TypewriterEffect words={words} /> */}
 
 <p>Drop me a line below and let's turn </p>
