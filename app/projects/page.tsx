@@ -5,11 +5,13 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/3d-card";
 import {items} from "../lib/project-carditems";
 import {FaGithub} from "react-icons/fa";
+import { poppins } from "../fonts";
 const page = () => {
   return (
 
-    <div className="sm:mx-auto mx-auto md:ml-[11rem] md:px-[0.5rem]  md:mr-[11rem]  md:py-[2rem] relative">
-      <div className="md:mt-[3rem] mt-[4rem] md:grid grid grid-cols-1 sm:grid sm:grid-cols-1 md:grid-cols-2">
+    <div className={`sm:mx-auto mx-auto md:ml-[11rem] md:px-[0.5rem]  md:mr-[11rem]  md:py-[2rem] relative ${poppins.className}`}>
+    <div className="md:ml-[2rem] ml-[2rem] w-[10.5rem] h-[3rem] md:h-[4rem] md:mt-[2rem] mt-[6rem] text-white md:text-4xl text-3xl font-semibold border-b border-b-zinc-50/30  md:pb-2 ">Projects</div>
+      <div className="mx-[3rem] md:mt-[3rem] md:grid grid grid-cols-1 sm:grid sm:grid-cols-1 md:grid-cols-2">
 {items.map((item)=> (
 
 <CardContainer key={item.name} className="inter-var">
@@ -50,7 +52,7 @@ const page = () => {
     {item.tech_stack.map((tech,techIndex)=> (
 
        <Image key={techIndex}
-       className={tech.includes('/logos/tailwind-css-2.svg') ? 'pt-2' : ''}
+       className={tech.includes('/logos/tailwind-css-2.svg') ? 'pt-1' : ''}
         src={tech}
         width={25}
         height={25}
@@ -67,14 +69,18 @@ const page = () => {
           as="button"
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-          Try now →
+
+          <a href={item.link}> Try now →</a>
+         
         </CardItem>
         <CardItem
           translateZ={20}
           as="button"
           className="px-2 py-2 rounded-3xl bg-black dark:bg-white mb-3 dark:text-black text-white text-xs font-bold"
         >
+          <a href={item.repo}>
         <FaGithub size={20}/>
+        </a>
         </CardItem>
       </div>
     </CardBody>

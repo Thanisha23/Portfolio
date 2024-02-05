@@ -14,6 +14,7 @@ interface Link {
 
 interface SocialLink {
   name: string;
+  href: string;
   icon: JSX.Element;
 }
 
@@ -25,8 +26,8 @@ const links: Link[] = [
 ];
 
 const socialLinks: SocialLink[] = [
-  { name: 'X', icon: <FaXTwitter size={18} /> },
-  { name: 'Github', icon:  <FaGithub size={24}/> },
+  { name: 'X',href:'https://x.com/Thanisha23?t=X2xlsf3k4N10ZJ9A9j980g&s=09', icon: <FaXTwitter size={18} /> },
+  { name: 'Github',href:'https://github.com/Thanisha23', icon:  <FaGithub size={24}/> },
 ];
 
 export { links, socialLinks };

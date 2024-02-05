@@ -4,6 +4,8 @@ interface Items {
     status:string,
     about : string,
     image:string,
+    link:string,
+    repo:string,
 }
 
 const items: Items[] = [
@@ -15,41 +17,76 @@ const items: Items[] = [
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
-    image:"anydo.jpeg"
+    about:"Built a chic to-do app with React, JavaScript, and Tailwind CSS for visually pleasing task management.",
+    image:"anydo.jpeg",
+    link:"https://anydo.vercel.app/",
+    repo:"https://github.com/Thanisha23/AnyDo-responsive",
 },
 {
-    name:"hello",
+    name:"My Portfolio",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
-    image:"anydo.jpeg"
+    about:"The very place where your cursor is currently unwinding and your screen is doing its pixelated dance moves!",
+    image:"portfolio.png",
+    link:"https://thanisha23-portfolio.vercel.app/",
+    repo:"https://github.com/Thanisha23/Portfolio",
 },
 {
-    name:"heelo",
+    name:"Connectify",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
-    image:"anydo.jpeg"
+    about:"React and Tailwind crafted landing page for your social app with secure authentication.",
+    image:"connectifyy.png",
+    link:"https://anydo.vercel.app/",
+    repo:"https://github.com/Thanisha23/Connectify",
 },
 {
-    name:"xyz",
+    name:"Vawulens",
     tech_stack:[
         "/logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
-    about:"Designed a chic to-do app using React, JavaScript, and Tailwind CSS for visually appealing and user-friendly task management.",
-    image:"anydo.jpeg"
+    about:"A Gym website crafted using Tailwind and JavaScript for a visually appealing web interface.",
+    image:"vawulens.png",
+    link:"https://vawulens-gym-website.netlify.app/",
+    repo:"https://github.com/Thanisha23/Gym-Website",
+},
+{
+    name:"Snake-Game",
+    tech_stack:[
+        "/logos/html-icon.png",
+        "/logos/css-icon.png",
+        "/logos/logo-javascript.svg",
+        
+    ],
+    status:"Completed",
+    about:"Built a Snake Game that deepened my understanding of javascript,Have fun playing!",
+    image:"snakegame.jpeg",
+    link:"https://snakerun-game.netlify.app/",
+    repo:"https://github.com/Thanisha23/Snake-Game",
+},
+{
+    name:"SimplyRecipes",
+    tech_stack:[
+        "/logos/html-icon.png",
+        "/logos/css-icon.png",
+        "/logos/logo-javascript.svg",
+    ],
+    status:"Completed",
+    about:"Crafted a recipes site with HTML, CSS, and JS, offering diverse and delightful culinary ideas.",
+    image:"recipes.png",
+    link:"https://thanisha23.github.io/Recipes-Website/",
+    repo:"https://github.com/Thanisha23/Recipes-Website"
 }
 ]
 
