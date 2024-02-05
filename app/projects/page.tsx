@@ -10,7 +10,7 @@ const page = () => {
   return (
 
     <div className={`sm:mx-auto mx-auto md:ml-[11rem] md:px-[0.5rem]  md:mr-[11rem]  md:py-[2rem] relative ${poppins.className}`}>
-    <div className="md:ml-[2rem] ml-[2rem] w-[10.5rem] h-[3rem] md:h-[4rem] md:mt-[2rem] mt-[6rem] text-white md:text-4xl text-3xl font-semibold border-b border-b-zinc-50/30  md:pb-2 ">Projects</div>
+    <div className="md:ml-[5rem] ml-[2rem] w-[10.5rem] h-[3rem] md:h-[4rem] md:mt-[2rem] mt-[6rem] text-white md:text-4xl text-3xl font-semibold border-b border-b-zinc-50/30  md:pb-2 ">Projects</div>
       <div className="mx-[3rem] md:mt-[3rem] md:grid grid grid-cols-1 sm:grid sm:grid-cols-1 md:grid-cols-2">
 {items.map((item)=> (
 

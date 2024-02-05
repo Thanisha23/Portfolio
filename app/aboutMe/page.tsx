@@ -26,8 +26,8 @@ const page = () => {
         <a href="https://leetcode.com/thanisha_b/" className="text-white font-semibold hover:text-black hover:bg-white border border-zinc-50 w-[14rem] md:w-[10rem] h-[3rem] mx-auto mt-[1.5rem] rounded-3xl flex justify-center items-center gap-[1rem] transition-colors duration-500 md:mt-0">    <SiLeetcode />Leetcode</a>
         </div>
       {/* desc */}
-        <div className="border-b border-zinc-50/30 text-gray-300 mx-auto w-full px-[5rem] text-left pb-[1rem] text-sm mt-[4rem] md:mt-[3rem] md:w-[35rem] ">
-          My name is Thanisha Belchada and I am a Full Stack Developer from India with a passion for creating fun and amazing websites
+        <div className="text-center border-b border-zinc-50/30 text-gray-300 mx-auto w-full px-[5rem] pb-[1.5rem] text-sm md:text-md mt-[2rem] md:mt-[3rem] md:w-[35rem] ">
+          I am a Full Stack Developer from India with a passion for creating fun and amazing websites
         </div>
        
       <h1 className={`text-white flex justify-center items-center w-full h-[2rem] mt-[1rem] md:mt-[1.5rem] font-bold text-xl md:text-3xl`}>My Tech Stack</h1>

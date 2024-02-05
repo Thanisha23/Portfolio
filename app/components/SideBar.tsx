@@ -39,7 +39,7 @@ const SideBar = () => {
       </div>
 
       {/* Sidebar for larger screens */}
-      <ul className='z-50 bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] fixed top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center hidden md:block sm:block'>
+      <ul className='z-50 bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] fixed top-[12rem] left-[2rem] rounded-full flex-row justify-center items-center hidden md:block sm:block'>
         {links.map((link: any) => (
           <li key={link.name} onClick={handleLinkClick}>
             <Link href={link.href} legacyBehavior>

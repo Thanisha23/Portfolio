@@ -25,8 +25,8 @@ const items: Items[] = [
 {
     name:"My Portfolio",
     tech_stack:[
-        "/logos/react-2.svg",
-        "/logos/logo-javascript.svg",
+        "/logos/next-js-white.svg",
+        "/logos/ts-logo-128.svg",
         "/logos/tailwind-css-2.svg",
     ],
     status:"Completed",
