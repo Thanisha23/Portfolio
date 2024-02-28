@@ -10,6 +10,47 @@ interface Items {
 
 const items: Items[] = [
     {
+        name:"PayBuddy",
+        tech_stack:[
+            "logos/react-2.svg",
+            "/logos/ts-logo-128.svg",
+            "/logos/tailwind-css-2.svg",
+        ],
+        status:"Ongoing",
+        about:"A responsive banking application with seamless  UI and transaction capabilities, styled with Tailwind",
+        image:"paybuddy.png",
+        link:"https://pay-buddy-lilac.vercel.app/",
+        repo:"https://github.com/Thanisha23/PayBuddy",
+    },
+    {
+        name:"My Portfolio",
+        tech_stack:[
+            "/logos/next-js-white.svg",
+            "/logos/ts-logo-128.svg",
+            "/logos/tailwind-css-2.svg",
+        ],
+        status:"Completed",
+        about:"The very place where your cursor is currently unwinding and your screen is doing its pixelated dance moves!",
+        image:"portfolio.png",
+        link:"https://thanisha23-portfolio.vercel.app/",
+        repo:"https://github.com/Thanisha23/Portfolio",
+    },
+    {
+        name:"Vawulens",
+        tech_stack:[
+            "/logos/react-2.svg",
+            "/logos/logo-javascript.svg",
+            "/logos/tailwind-css-2.svg",
+        ],
+        status:"Completed",
+        about:"A Gym website crafted using Tailwind and JavaScript for a visually appealing web interface.",
+        image:"vawulens.png",
+        link:"https://vawulens-gym-website.netlify.app/",
+        repo:"https://github.com/Thanisha23/Gym-Website",
+    },
+    
+  
+    {
     name:"AnyDo:>",
     tech_stack:[
         "logos/react-2.svg",
@@ -22,19 +63,7 @@ const items: Items[] = [
     link:"https://anydo.vercel.app/",
     repo:"https://github.com/Thanisha23/AnyDo-responsive",
 },
-{
-    name:"My Portfolio",
-    tech_stack:[
-        "/logos/next-js-white.svg",
-        "/logos/ts-logo-128.svg",
-        "/logos/tailwind-css-2.svg",
-    ],
-    status:"Completed",
-    about:"The very place where your cursor is currently unwinding and your screen is doing its pixelated dance moves!",
-    image:"portfolio.png",
-    link:"https://thanisha23-portfolio.vercel.app/",
-    repo:"https://github.com/Thanisha23/Portfolio",
-},
+
 {
     name:"Connectify",
     tech_stack:[
@@ -48,19 +77,7 @@ const items: Items[] = [
     link:"https://anydo.vercel.app/",
     repo:"https://github.com/Thanisha23/Connectify",
 },
-{
-    name:"Vawulens",
-    tech_stack:[
-        "/logos/react-2.svg",
-        "/logos/logo-javascript.svg",
-        "/logos/tailwind-css-2.svg",
-    ],
-    status:"Completed",
-    about:"A Gym website crafted using Tailwind and JavaScript for a visually appealing web interface.",
-    image:"vawulens.png",
-    link:"https://vawulens-gym-website.netlify.app/",
-    repo:"https://github.com/Thanisha23/Gym-Website",
-},
+
 {
     name:"Snake-Game",
     tech_stack:[

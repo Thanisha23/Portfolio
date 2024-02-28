@@ -12,7 +12,7 @@ const page = () => {
        <div><div className="bg-green-500 w-1 h-1 shadow-[0_0_5px_5px_rgba(240,240,240,0.3)] rounded-full -top-[1rem] md:left-[22rem] left-[4rem] absolute animate-pulse"></div>
         <div className="text-white text-base -top-[1.7rem] left-[4.8rem] md:left-[22.8rem] absolute font-semibold mb-[2rem]">Available for hire</div></div>
         </div>
-        <div className="pt-[1rem] ml-[4rem] md:w-[30rem] sm:w-[20rem] m-[1rem] w-[16rem] sm:mx-auto h-[6rem] md:h-[10rem] bg-transparent rounded-2xl mt-[1rem] text-white font-bold text-2xl md:mx-auto md:text-5xl sm:text-4xl md:tracking-normal">Hey, I’m Thanisha a Full stack web developer.</div>
+        <div className="pt-[1rem] ml-[4rem] md:w-[30rem] sm:w-[20rem] m-[1rem] w-[16rem] sm:mx-auto h-[6rem] md:h-[10rem] bg-transparent rounded-2xl mt-[1rem] text-white font-bold text-2xl md:mx-auto md:text-5xl sm:text-4xl md:tracking-normal md:leading-[3.5rem]">Hey, I’m Thanisha a Full stack web developer.</div>
         <div className="md:w-[45rem]  md:mt-[3rem] md:flex md:justify-center md:items-center md:gap-1 md:mx-auto">
         <a href="https://github.com/Thanisha23" className="text-white font-semibold hover:text-black hover:bg-white border border-zinc-50 w-[14rem] md:w-[10rem] h-[3rem] mx-auto mt-[4rem] rounded-3xl flex justify-center items-center gap-[1rem] md:mt-0 transition-colors duration-500 ">
         <FaGithub size={27}/>

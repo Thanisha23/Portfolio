@@ -1,13 +1,12 @@
 "use client"
 import React from "react";
-
 import Spotlight from "../components/Spotlight";
 import Image from "next/image";
 
 import { satisfy } from "../fonts";
 import Contact from "../components/Contact";
 const page = () => {
-
+ 
 
 
 

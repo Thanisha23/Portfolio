@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-toast": "^1.1.5",
     "@tabler/icons-react": "^2.46.0",
     "@tsparticles/engine": "^3.1.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.1.0",
     "@types/nodemailer": "^6.4.14",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^10.18.0",
+    "lucide-react": "^0.343.0",
     "next": "14.0.4",
     "nodemailer": "^6.9.8",
     "pnpm": "^8.14.1",
@@ -24,7 +27,8 @@
     "react-element-to-jsx-string": "^15.0.0",
     "react-hook-form": "^7.49.3",
     "react-icons": "^5.0.1",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
