@@ -3,6 +3,7 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '../utils/send-email';
+
 export type FormData = {
   name: string;
   email: string;
@@ -11,10 +12,10 @@ export type FormData = {
 
 const Contact: FC = () => {
   const { register, handleSubmit,reset } = useForm<FormData>();
+
    function onSubmit(data: FormData) {
     sendEmail(data);
     reset();
-    
   }
 
   return (
