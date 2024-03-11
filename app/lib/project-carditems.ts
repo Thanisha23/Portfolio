@@ -71,7 +71,7 @@ const items: Items[] = [
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
     ],
-    status:"Completed",
+    status:"Ongoing",
     about:"React and Tailwind crafted landing page for your social app with secure authentication.",
     image:"connectifyy.png",
     link:"https://anydo.vercel.app/",

@@ -12,7 +12,12 @@ const SideBar = () => {
 
   // Function to handle link clicks
   const handleLinkClick = () => {
-    console.log("Link clicked");
+   setIsMenuOpen(false);
+  };
+
+  const handleOverlayClick = () => {
+    // Close the menu when the overlay is clicked
+    setIsMenuOpen(false);
   };
 
   return (
@@ -58,7 +63,7 @@ const SideBar = () => {
 
       {/* Conditional rendering for the mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden sm:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 flex items-center justify-center">
+        <div className="md:hidden sm:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 flex items-center justify-center" onClick={handleOverlayClick}>
           <ul className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center '>
             {links.map((link: any) => (
               <li key={link.name} onClick={handleLinkClick}>

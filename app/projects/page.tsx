@@ -23,7 +23,7 @@ const page = () => {
        {item.name}
       </CardItem>
     
-        <button className="absolute text-[0.7rem] bg-white px-[0.2rem] py-[0.1rem] top-[1rem] right-[1rem] rounded-md">{item.status}</button>
+        <button className="absolute text-[0.7rem] bg-white px-[0.4rem] py-[0.1rem] top-[1rem] right-[1rem] rounded-md text-black">{item.status}</button>
         <CardItem
         as="p"
         translateZ="60"
