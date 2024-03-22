@@ -70,7 +70,7 @@ const page = () => {
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
 
-          <a href={item.link}> Try now →</a>
+          <a href={item.link}>Check Live →</a>
          
         </CardItem>
         <CardItem

@@ -18,7 +18,7 @@ const items: Items[] = [
         ],
         status:"Ongoing",
         about:"A responsive banking application with seamless  UI and transaction capabilities, styled with Tailwind",
-        image:"paybuddy.png",
+        image:"paybuddy-1.png",
         link:"https://pay-buddy-lilac.vercel.app/",
         repo:"https://github.com/Thanisha23/PayBuddy",
     },
@@ -74,7 +74,7 @@ const items: Items[] = [
     status:"Ongoing",
     about:"React and Tailwind crafted landing page for your social app with secure authentication.",
     image:"connectifyy.png",
-    link:"https://anydo.vercel.app/",
+    link:"",
     repo:"https://github.com/Thanisha23/Connectify",
 },
 
