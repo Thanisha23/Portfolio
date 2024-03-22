@@ -1,6 +1,6 @@
 <h1 align="center">Portfolio</h1>
 <p align="center">
-  <img src="./public/portfolio.png" alt="Portfolio-img">
+  <img src="./public/pf-1.jpeg" alt="Portfolio-img">
 </p>
 
 <div align="center"><h4>Hello folks,Here is my portfolio</h3></div>
