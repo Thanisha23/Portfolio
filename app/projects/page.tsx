@@ -54,7 +54,7 @@ const page = () => {
        <Image key={techIndex}
        className={tech.includes('/logos/tailwind-css-2.svg') ? 'pt-1' : ''}
         src={tech}
-        width={25}
+        width={tech.includes('/logos/hono-1.png') ? 20: tech.includes('/logos/express-1') ? 70 : 25}
         height={25}
         alt="Picture of the author"
       />

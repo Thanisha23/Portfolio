@@ -10,13 +10,32 @@ interface Items {
 
 const items: Items[] = [
     {
+        name:"Blogosphere",
+        tech_stack:[
+            "logos/react-2.svg",
+            "/logos/ts-logo-128.svg",
+            "/logos/tailwind-css-2.svg",
+            "/logos/hono-1.png",
+            "/logos/postgreSQL.png",
+            "/logos/prisma.png",
+            "/logos/cloudflare-Workers.png"
+        ],
+        status:"Completed",
+        about:"Create, manage, share content effortlessly with a responsive, user-friendly design.",
+        image:"blogospheree.jpeg",
+        link:"https://blogospheree.vercel.app/",
+        repo:"https://github.com/Thanisha23/Blogosphere",
+    },
+    {
         name:"PayBuddy",
         tech_stack:[
             "logos/react-2.svg",
             "/logos/ts-logo-128.svg",
             "/logos/tailwind-css-2.svg",
+            "/logos/mongodb.png",
+            "/logos/express-1.png",
         ],
-        status:"Ongoing",
+        status:"Completed",
         about:"A responsive banking application with seamless  UI and transaction capabilities, styled with Tailwind",
         image:"paybuddy-1.png",
         link:"https://pay-buddy-lilac.vercel.app/",
@@ -56,12 +75,13 @@ const items: Items[] = [
         "logos/react-2.svg",
         "/logos/logo-javascript.svg",
         "/logos/tailwind-css-2.svg",
+        "/logos/redux.png"
     ],
     status:"Completed",
     about:"Built a chic to-do app with React, JavaScript, and Tailwind CSS for visually pleasing task management.",
     image:"anydo.jpeg",
-    link:"https://anydo.vercel.app/",
-    repo:"https://github.com/Thanisha23/AnyDo-responsive",
+    link:"https://todo-quad-b.vercel.app/",
+    repo:"https://github.com/Thanisha23/Todo-QuadB",
 },
 
 {

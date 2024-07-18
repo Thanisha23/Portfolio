@@ -1,4 +1,4 @@
-import { Merienda,Poppins,Luckiest_Guy,Satisfy,Cinzel,DM_Serif_Display} from "next/font/google";
+import { Merienda,Poppins,Luckiest_Guy,Satisfy,Cinzel,DM_Serif_Display, Inter} from "next/font/google";
 
 
 
@@ -34,3 +34,4 @@ export const poppins = Poppins({
     display: 'swap',
     weight: "400"
 })
+
