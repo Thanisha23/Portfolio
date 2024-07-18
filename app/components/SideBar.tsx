@@ -4,6 +4,7 @@ import { links, socialLinks } from '../lib/navitems';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 // Sidebar component
 const SideBar = () => {
@@ -44,7 +45,12 @@ const SideBar = () => {
       </div>
 
       {/* Sidebar for larger screens */}
-      <ul className='z-50 bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] fixed top-[12rem] left-[2rem] rounded-full flex-row justify-center items-center hidden md:block sm:block'>
+      <motion.ul 
+        className='z-50 bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] fixed top-[12rem] left-[2rem] rounded-full flex-row justify-center items-center hidden md:block sm:block'
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {links.map((link: any) => (
           <li key={link.name} onClick={handleLinkClick}>
             <Link href={link.href} legacyBehavior>
@@ -59,12 +65,23 @@ const SideBar = () => {
             </Link>
           </li>
         ))}
-      </ul>
+      </motion.ul>
 
       {/* Conditional rendering for the mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden sm:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 flex items-center justify-center" onClick={handleOverlayClick}>
-          <ul className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center '>
+        <motion.div 
+          className="md:hidden sm:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          onClick={handleOverlayClick}
+        >
+          <motion.ul 
+            className='bg-transparent px-[0.4rem] py-[0.5] w-[3.8rem] h-[15.5rem] border-[2px] border-white-400/20 m-[1rem] absolute top-[12rem] left-[1rem] rounded-full flex-row justify-center items-center'
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             {links.map((link: any) => (
               <li key={link.name} onClick={handleLinkClick}>
                 <Link href={link.href} legacyBehavior>
@@ -79,18 +96,25 @@ const SideBar = () => {
                 </Link>
               </li>
             ))}
-          </ul>
-        </div>
+          </motion.ul>
+        </motion.div>
       )}
 
       {/* Social links */}
-      <ul className='fixed bg-transparent h-[3rem] top-[0.2rem] w-[6.2rem] right-1 md:w-[7.2rem] md:h-[3.2rem] border-[2px] text-white border-white-400/20 m-[1rem] md:top-[2rem] d:mright-[2rem] rounded-full flex-row justify-center z-50 items-center flex space-x-2'>
+      <motion.ul 
+        className='fixed bg-transparent h-[3rem] top-[0.2rem] w-[6.2rem] right-1 md:w-[7.2rem] md:h-[3.2rem] border-[2px] text-white border-white-400/20 m-[1rem] md:top-[2rem] d:mright-[2rem] rounded-full flex-row justify-center z-50 items-center flex space-x-2'
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {socialLinks.map((item: any, index: number) => (
-          <li key={index}  className='w-[2.3rem] h-[2.3rem] flex justify-center items-center   hover:bg-white rounded-full hover:text-black transition-colors duration-500'><a href={item.href} target="_blank" rel="noopener noreferrer">
-          {item.icon}
-        </a></li>
+          <li key={index}  className='w-[2.3rem] h-[2.3rem] flex justify-center items-center   hover:bg-white rounded-full hover:text-black transition-colors duration-500'>
+            <a href={item.href} target="_blank" rel="noopener noreferrer">
+              {item.icon}
+            </a>
+          </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };

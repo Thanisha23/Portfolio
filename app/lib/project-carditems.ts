@@ -34,6 +34,7 @@ const items: Items[] = [
             "/logos/tailwind-css-2.svg",
             "/logos/mongodb.png",
             "/logos/express-1.png",
+            "/logos/nodejs-1.svg"
         ],
         status:"Completed",
         about:"A responsive banking application with seamless  UI and transaction capabilities, styled with Tailwind",

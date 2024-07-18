@@ -1,13 +1,25 @@
-
+"use client"
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { poppins } from "../fonts";
+import {motion} from "framer-motion"
 const page = () => {
+  const fadeInVariants = {
+    hidden:{opacity : 0},
+    visible:{
+      opacity:1,
+      transition:{
+        duration:0.5
+      }
+    }
+  }
   return (
-    <div className={`${poppins.className}`}>
+    <>
+    <motion.div className={`${poppins.className}`} initial="hidden" animate="visible" variants={fadeInVariants}>
+    <div>
       <div className=" relative mt-[7rem]">
        <div><div className="bg-green-500 w-1 h-1 shadow-[0_0_5px_5px_rgba(240,240,240,0.3)] rounded-full -top-[1rem] md:left-[22rem] left-[4rem] absolute animate-pulse"></div>
         <div className="text-white text-base -top-[1.7rem] left-[4.8rem] md:left-[22.8rem] absolute font-semibold mb-[2rem]">Available for hire</div></div>
@@ -119,6 +131,8 @@ const page = () => {
 
    
     </div>
+     </motion.div>
+     </>
   )
 }
 

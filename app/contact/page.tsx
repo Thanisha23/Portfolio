@@ -2,16 +2,26 @@
 import React from "react";
 import Spotlight from "../components/Spotlight";
 import Image from "next/image";
-
+import {motion} from "framer-motion"
 import { satisfy } from "../fonts";
 import Contact from "../components/Contact";
 const page = () => {
- 
+  const fadeInVariants = {
+    hidden:{opacity : 0},
+    visible:{
+      opacity:1,
+      transition:{
+        duration:0.5
+      }
+    }
+  }
 
 
 
 
   return (
+    <>
+    <motion.div  initial="hidden" animate="visible" variants={fadeInVariants}>
     <div className="md:mx-[8rem] rounded-md flex items-center justify-center  md:flex flex-row md:flex-col md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
     <Spotlight
       className="top-6 left-8 md:left-80 md:-top-20"
@@ -47,6 +57,8 @@ const page = () => {
 
     </div>
   </div>
+  </motion.div>
+  </>
   )
 }
 
