@@ -25,7 +25,7 @@ const Home: NextPage = () => {
     },
     {
       text: "Thanisha",
-      className: "text-white dark:shadow-2xl",
+      className: "text-white shadow-2xl dark:shadow-2xl",
     },
   ];
  
