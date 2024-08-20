@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
    
-    <html lang="en">
+    <html className='dark' lang="en">
       <body className={`${inter.className}`}>
       <Toaster />
       <ThemeProvider
