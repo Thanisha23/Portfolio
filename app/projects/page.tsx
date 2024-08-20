@@ -48,7 +48,7 @@ const ProjectsPage = () => {
         {items.map((item) => (
           <motion.div key={item.name} variants={itemVariants}>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[22rem] sm:w-[30rem] h-[29rem] md:h-[29rem] rounded-xl p-6 border">
+              <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black bg-black dark:border-white/[0.2] border-white/[0.2] w-[22rem] sm:w-[30rem] h-[29rem] md:h-[29rem] rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
                   className="text-2xl font-bold text-neutral-600 dark:text-white mx-auto"
