@@ -1,17 +1,12 @@
-import { NextPage } from 'next';
-
+import { NextPage } from "next";
 import React from "react";
+import Home from "./components/Home";
 
-import Home from './components/Home';
 const LandingPage: NextPage = () => {
- 
- 
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <main className="flex justify-center items-center h-screen ">
       <Home />
-    </div>
-
-    
+    </main>
   );
 };
 

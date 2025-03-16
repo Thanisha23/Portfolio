@@ -10,6 +10,23 @@ interface Items {
 
 const items: Items[] = [
     {
+        name:"EonCapsule",
+        tech_stack:[
+            "/logos/next-js-white.svg",
+            "logos/react-2.svg",
+            "/logos/ts-logo-128.svg",
+            "/logos/tailwind-css-2.svg",
+            "/logos/postgreSQL.png",
+            "/logos/prisma.png",
+            "/logos/express-1.png"
+        ],
+        status:"Ongoing",
+        about:"Virtual Time Capsule lets users store and schedule digital messages, files, and videos for future release.",
+        image:"eoncapsule.png",
+        link:"",
+        repo:"",
+    },
+    {
         name:"Blogosphere",
         tech_stack:[
             "logos/react-2.svg",
@@ -96,7 +113,7 @@ const items: Items[] = [
     about:"React and Tailwind crafted landing page for your social app with secure authentication.",
     image:"connectifyy.png",
     link:"",
-    repo:"https://github.com/Thanisha23/Connectify",
+    repo:"",
 },
 
 {
@@ -127,5 +144,6 @@ const items: Items[] = [
     repo:"https://github.com/Thanisha23/Recipes-Website"
 }
 ]
+
 
 export {items};
