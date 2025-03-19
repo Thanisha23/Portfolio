@@ -68,7 +68,7 @@ const items: Items[] = [
         ],
         status:"Completed",
         about:"The very place where your cursor is currently unwinding and your screen is doing its pixelated dance moves!",
-        image:"portfolio.png",
+        image:"portfolioV1.png",
         link:"https://thanisha23-portfolio.vercel.app/",
         repo:"https://github.com/Thanisha23/Portfolio",
     },
