@@ -82,3 +82,30 @@
 body{
   background-color: black;
 }
+
+/* Custom scrollbar styling */
+.scrollbar-container::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbar-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* For Firefox */
+.scrollbar-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}
