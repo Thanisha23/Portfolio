@@ -302,32 +302,32 @@ const items: Items[] = [
     repo: "https://github.com/Thanisha23/Todo-QuadB",
   },
 
-  {
-    name: "Connectify",
-    tech_stack: [
-      {
-        name: "React",
-        badge:
-          "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black",
-      },
-      {
-        name: "JavaScript",
-        badge:
-          "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
-      },
-      {
-        name: "Tailwind CSS",
-        badge:
-          "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
-      },
-    ],
-    status: "Ongoing",
-    about:
-      "React and Tailwind crafted landing page for your social app with secure authentication.",
-    image: "connectifyy.png",
-    link: "",
-    repo: "",
-  },
+  // {
+  //   name: "Connectify",
+  //   tech_stack: [
+  //     {
+  //       name: "React",
+  //       badge:
+  //         "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //       badge:
+  //         "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+  //     },
+  //     {
+  //       name: "Tailwind CSS",
+  //       badge:
+  //         "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+  //     },
+  //   ],
+  //   status: "Ongoing",
+  //   about:
+  //     "React and Tailwind crafted landing page for your social app with secure authentication.",
+  //   image: "connectifyy.png",
+  //   link: "",
+  //   repo: "",
+  // },
 
   {
     name: "Snake-Game",
