@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { poppins } from "../fonts";
 import Link from "next/link";
 
@@ -67,13 +67,14 @@ const Home = () => {
               <span className="bg-gradient-to-r from-white via-gray-200 to-gray-300 text-transparent bg-clip-text">
                 Thanisha,
               </span>{" "}
-              professional overthinker and a passionate developer.
+              <br />
+             self-taught developer with a passion for building.
             </h1>
           </div>
 
           <div className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto opacity-80 mb-8 sm:mb-10">
-            Full-stack dev turning coffee into code, ideas into apps, and bugs
-            into features (sometimes on purpose).
+            Full-stack developer crafting seamless apps for web & mobile. <br />
+            Turning ideas into reality, one line of code at a time.
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
